@@ -1,106 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Yogesh Bollu | Web Developer</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
+<!-- <script src="script.js"></script> -->
 
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="logo">YB</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li>
-        <a href="Yogesh_Bollu_Junior_Web_Developer.pdf" class="resume-btn" download>
-          Resume
-        </a>
-      </li>
-    </ul>
-  </nav>
+    <nav class="navbar">
+  <div class="logo">YB</div>
+
+  <!-- <div class="hamburger" id="hamburger"> -->
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li>
+      <a href="Yogesh_Bollu_Junior_Web_Developer.pdf" download class="nav-btn">Resume</a>
+    </li>
+  </ul>
+</nav>
+
+
 
   <!-- HERO -->
   <header class="hero">
-    <h1>Yogesh Bollu</h1>
-    <p>Junior Web / Frontend Developer</p>
-    <span>HTML • CSS • JavaScript</span>
+    <h1 class="fade-in">Yogesh Bollu</h1>
+    <p class="fade-in delay">Junior Web / Frontend Developer</p>
+    <span class="fade-in delay2">HTML • CSS • JavaScript</span>
 
-    <div class="buttons">
-      <a href="Yogesh_Bollu_Junior_Web_Developer.pdf" download class="btn primary">
-        Download Resume
-      </a>
+    <div class="buttons fade-in delay3">
+      <a href="Yogesh_Bollu_Junior_Web_Developer.pdf" download class="btn primary">📄 Download Resume</a>
       <a href="#projects" class="btn secondary">View Projects</a>
     </div>
-
-    <a href="#about" class="scroll-indicator">
-      <span></span>
-    </a>
   </header>
 
+  <!-- <a href="#about" class="scroll-indicator"> -->
+  <span></span>
+</a>
+     
+
+
   <!-- ABOUT -->
-  <section id="about">
-    <h2>About Me</h2>
+  <section class="about reveal" id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a final-year Computer Engineering student with a strong foundation in frontend web development.
+    I have hands-on experience building responsive and user-friendly web applications using
+    <b>HTML, CSS, and JavaScript</b>.
+  </p>
+  <p>
+    I have completed a Web Development internship where I worked on real-world UI components and
+    improved website responsiveness. Along with this, I have developed multiple academic and
+    personal projects, including an AI-based legal assistance platform.
+  </p>
+  <p>
+    I am highly motivated to start my career as a <b>Junior Web / Frontend Developer</b>,
+    where I can apply my skills, learn from industry professionals, and grow as a software developer.
+  </p>
+</section>
+
+<section class="experience reveal">
+  <h2>Internship & Achievements</h2>
+
+  <div class="project-card">
+    <h3>Web Development Intern – LearnTricks</h3>
     <p>
-      I am a final-year Computer Engineering student with a strong interest in
-      frontend web development. I enjoy building clean, responsive, and
-      user-friendly websites.
+      Worked on frontend development using HTML, CSS, and JavaScript.
+      Built responsive web pages, improved UI components, and gained hands-on
+      experience with real-world web development workflows.
     </p>
+  </div>
+
+  <div class="project-card">
+    <h3>Achievements</h3>
     <p>
-      I have completed a Web Development internship and worked on real-world
-      projects including an AI-based legal assistance platform.
+      🏆 Runner-up – Internal Hackathon 2024 <br>
+      🚀 Active Participant – Google Developer Group (Jams & Seminars)
     </p>
+  </div>
+</section>
+
+  <!-- SKILLS -->
+  <section class="skills reveal">
+    <h2>Skills</h2>
+    <div class="skill-grid">
+      <span>HTML5</span>
+      <span>CSS3</span>
+      <span>JavaScript</span>
+      <span>Responsive Design</span>
+      <span>Python</span>
+      <span>Git & GitHub</span>
+    </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects">
+  <section class="projects reveal" id="projects">
     <h2>Projects</h2>
 
-    <div class="project-card">
+    <div class="project-card highlight">
       <h3>NyaySetu – AI Lawyer for the People</h3>
       <p>
-        An AI-powered legal assistance platform designed to help users understand
-        legal procedures and access justice easily.
+        An AI-powered legal assistance platform designed to help users understand legal procedures,
+        generate legal guidance, and provide accessible justice solutions.
       </p>
+      <span>AI • NLP • Web Application</span>
     </div>
 
     <div class="project-card">
       <h3>Web Quiz Application</h3>
-      <p>
-        Interactive quiz platform with dynamic questions and real-time scoring.
-      </p>
+      <p>Interactive quiz platform with dynamic questions and scoring system.</p>
+      <span>HTML • CSS • JavaScript</span>
     </div>
 
     <div class="project-card">
       <h3>Web Streaming Application</h3>
-      <p>
-        Responsive frontend interface for video upload and playback.
-      </p>
+      <p>Frontend interface for video upload and playback with responsive UI.</p>
+      <span>HTML • CSS • JavaScript</span>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
+  <section id="contact" class="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:bolluyesh24@gmail.com">bolluyesh24@gmail.com</a></p>
-    <p>Phone: +91 8010560097</p>
-    <p>GitHub: <a href="https://github.com/Ybollu2407" target="_blank">Ybollu2407</a></p>
+    <p>📧 <a href="mailto:bolluyesh24@gmail.com">bolluyesh24@gmail.com</a></p>
+    <p>📞 +91 8010560097</p>
+    <p>💻 <a href="https://github.com/Ybollu2407" target="_blank">GitHub: Ybollu2407</a></p>
   </section>
+  
+  <a href="https://wa.me/918010560097" class="whatsapp" target="_blank">
+  💬
+</a>
+<button id="topBtn">↑</button>
 
-  <!-- FOOTER -->
+
   <footer>
-    © 2026 Yogesh Bollu
+    <p>© 2026 Yogesh Bollu</p>
   </footer>
 
-  <!-- JS -->
-  <script src="script.js"></script>
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    window.addEventListener('scroll', () => {
+      reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+          el.classList.add('active');
+        }
+      });
+    });
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.onclick = () => {
+    navLinks.classList.toggle("show");
+  };
+  const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 10) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+
+const sections = document.querySelectorAll("section");
+const navItems = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 80;
+    if (scrollY >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navItems.forEach(a => {
+    a.classList.remove("active");
+    if (a.getAttribute("href") === `#${current}`) {
+      a.classList.add("active");
+    }
+  });
+});
+
+</script>
+
 
 </body>
 </html>
-
