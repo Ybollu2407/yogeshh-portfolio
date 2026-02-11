@@ -45,11 +45,9 @@ section {
 
 /* 4. Fix for the "Hero" (Top) section specifically */
 .hero-section {
-    min-height: 100vh; /* Use min-height, never fixed height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 140px 20px 80px;
 }
+
 html, body {
     background-color: #020617; /* Replace with your specific dark blue/black hex */
     margin: 0;
@@ -569,6 +567,7 @@ body::before {
   background: #020617;
   z-index: -1;
 }
+
 
 
 
